@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destinations WishList</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	 <!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+	
+	<header>
+        <h1>Vacation Destinations Wish List</h1>
+        <p>Found exciting places to visit on your next vacation? Use the form below to add them to your wish list</p>
+    </header>
+	
+	<main>
+		<form id="dest_deets_form">
+			
+			<label for="name">Destination name</label>
+            <input required type="text" id="name" placeholder="Enter the name of the destination">
+
+            <label for="location">Location</label>
+            <input required type="text" id="location" placeholder="Where is it located?">
+			
+			<label for="photo">Photo</label>
+            <input type="url" id="photo" placeholder="Enter an image url of the place">
+
+            <label for="description">Description</label>
+            <textarea type="text" id="description" placeholder="Where is it located?"></textarea>
+
+			<button type="submit">Add to list</button>
+		</form>
+		
+		<article>
+            <h2 id="title" >WishList details</h2>
+            <div id="destinations_container">
+                <!-- Dynamically populated by JavaScript -->
+				
+            </div>
+
+        </article>
+
+	</main>
+
+    <script src="vdscript.js"></script>
+
+    <footer>
+        <div class="col1">
+            <h2>Share your wishlist with your friends</h2>
+            <p>&copy; 2023 My Wishlist. All rights reserved.</p>
+        </div>
+        <div class="col2">
+            <div class="share-buttons">
+                <a class="share-button" href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                
+                <a class="share-button" href="whatsapp://send?text=Check out my wishlist: http://www.example.com">
+                    <i class="fab fa-whatsapp"></i>   WhatsApp</a>
+            </div>
+    </div>
+    </footer>
+
+</body>
+
+</html>
